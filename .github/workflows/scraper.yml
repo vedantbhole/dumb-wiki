@@ -48,7 +48,7 @@ jobs:
         python main.py
     
     - name: Upload logs as artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: scraper-logs
@@ -56,7 +56,7 @@ jobs:
         retention-days: 30
     
     - name: Upload data as artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: scraped-data
